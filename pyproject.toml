@@ -1,0 +1,18 @@
+[project]
+name = "lunist"
+version = "0.0.1a"
+authors = [
+  { name="Mike Dacre", email="mike@dacre.me" },
+]
+description = "Todoist --> Lunatask task synchronization"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/MikeDacre/lunist"
+Issues = "https://github.com/MikeDacre/lunist/issues"

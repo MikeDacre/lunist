@@ -1,6 +1,8 @@
 # Lunist
 Todoist --> Lunatask task synchronization
 
+**Currently under development and not functional**
+
 ## Idea
 
 When you have a bit of a disorganized brain like I do, in order to get anything
@@ -31,6 +33,26 @@ task, I'm thinking of adding a way to complete Todoist tasks once they have been
 checked off in Luna task or add an option where once tasks are sent to LUNA task
 they disappear from Todoist but I haven't done either yet.
 
+## Config
+
+Configuration is in `config/config.sample.yaml`. You should copy this to
+and edit the values to match your needs. The API keys are
+like a password, be careful with them. The mapping allows you to set the project
+to area mapping, the label to goal mapping, and label to duration. These allow
+you to specify what area and goal IDs you want to be automatically assigned via
+a label. Note these are evaluated from beginning to end and you can have many
+labels but only one project or goal, so the first one is used.
+
+**Once you are done, move the config file to `~/.lunist.yaml`, alternatively,
+you can execute the script with the argument `--config ` and your config file
+path. This is the only command line argument accepted, the rest is through the
+config file.**
+
+## Running
+
+Put the package somewhere that is convenient for you and then set a crontab to
+run however often you want to execute `scripts/main.py`.
+
 ## Issues and support
 
 Please feel free to open issues or pull requests but note that I am a medical
@@ -39,3 +61,4 @@ a long time before I'm able to pull the pull requests in. If anyone else is
 interested in co-maintaining this project please reach out to me. As long as you
 aren't crazy and have some experience with Python code, I'd be happy to give you
 rights to edit the code directly.
+

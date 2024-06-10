@@ -1,0 +1,32 @@
+todoist:
+  api_key: 'YOUR_TODOIST_API_KEY'
+lunatask:
+  api_key: 'YOUR_LUNATASK_API_KEY'
+db:
+  location: '~/.tasks.db'
+filter:
+  filter_on: TRUE
+  filter_label: '@lunatask'
+  delete_on_copy: FALSE
+mapping:
+  projects_to_areas:
+    "Project1": "Area_id1"
+    "Project2": "Area_id2"
+  labels_to_goals:
+    "label1": "Goal_ID1"
+    "label2": "Goal_ID2"
+  labels_to_duration:
+    "5m": "00:05"
+    "10m": "00:10"
+    "15m": "00:15"
+    "20m": "00:20"
+    "30m": "00:30"
+    "45m": "00:45"
+    "60m": "00:60"
+    "90m": "00:90"
+    "120m": "00:120"
+  priorities:
+    4: "Lowest"
+    3: "Normal"
+    2: "High"
+    1: "Highest"
